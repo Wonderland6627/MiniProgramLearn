@@ -1,0 +1,37 @@
+<view id="list-{{id}}"  wx:if="{{condition}}">{{message}}</view>
+
+
+<checkbox checked="{{condition}}"></checkbox>
+
+<view>{{a+b}}+{{a}}</view>
+
+<view>{{a>b?a:b}}</view>
+
+<view wx:if="{{a>5}}">1234</view>
+
+<view>{{"abc" + a}}</view>
+
+<view>{{abc.aaa}}</view>
+
+<view>{{list[2]}}</view>
+
+<view wx:for="{{list}}">ho</view>
+
+<view wx:for="{{[0,a,2,3,4]}}">{{item}}</view>
+
+<view wx:if="{{a > 10}}">if</view>
+<view wx:elif="{{a > 5}}">elif</view>
+<view wx:else>else</view>
+
+<view>-----------------------------</view>
+
+<view wx:for="{{array}}">
+  {{index}}:{{item.name}}
+</view>
+<view>-----------------------------</view>
+<view wx:for="{{array}}">
+  ou {{index}} : {{item.name}}
+  <view wx:for="{{array2}}" wx:for-item="item2" wx:for-index="index2">
+    in  {{index2}} : {{item2.name}}
+  </view>
+</view>

@@ -1,0 +1,43 @@
+{
+  "entryPagePath": "pages/bind/bind",
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/bind/bind",
+    "pages/template/template"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationStyle": "default",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Indey-Weixin",
+    "navigationBarBackgroundColor": "#800080",
+    "backgroundColor": "#00ffff",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#808080",
+    "selectedColor": "#000000",
+    "backgroundColor": "#f7f7f7",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "Chat",
+        "iconPath": "resources/imgs/icon_chat_tab_default.png",
+        "selectedIconPath": "resources/imgs/icon_chat_tab_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "Match",
+        "iconPath": "resources/imgs/icon_match_tab_default.png",
+        "selectedIconPath": "resources/imgs/icon_match_tab_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

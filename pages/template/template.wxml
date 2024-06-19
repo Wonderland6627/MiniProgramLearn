@@ -1,0 +1,24 @@
+<!--pages/template/template.wxml-->
+<template name="msgitem">
+  <view>
+    <text>{{index}}: {{msg}}</text>
+    <text>Time: {{time}}</text>
+  </view>
+</template>
+
+<view>
+  <template is="msgitem" data="{{...item}}"></template>
+  <view>
+    <block wx:for="{{[1,2,3,4,5]}}">
+      <template is="{{item % 2 == 0 ? 'even' : 'odd'}}"></template>
+    </block>
+  </view>
+</view>
+
+<template name="odd">
+  <view> odd </view>
+</template>
+
+<template name="even">
+  <view> even </view>
+</template>
